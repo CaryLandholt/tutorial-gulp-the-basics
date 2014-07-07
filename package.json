@@ -1,0 +1,18 @@
+{
+  "name": "tutorial-gulp-the-basics",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "event-stream": "^3.1.5",
+    "gulp": "^3.8.5",
+    "gulp-coffee": "^2.0.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "0.3.1"
+  }
+}
