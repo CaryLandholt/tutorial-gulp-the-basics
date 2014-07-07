@@ -4,14 +4,13 @@ var concat = require('gulp-concat');
 var coffee = require('gulp-coffee');
 var es = require('event-stream');
 
-gulp.task('coffee', function () {
-	return gulp.src('src/*.coffee')
-	.pipe(coffee())
-	.pipe(gulp.dest('src'));
-});
+gulp.task('scripts', function () {
+	var javaScriptFromCoffeeScript = gulp.src('src/*.coffee')
+		.pipe(coffee());
 
-gulp.task('scripts', ['coffee'], function () {
-	return gulp.src('src/*.js')
+	var javaScript = gulp.src('src/*.js');
+
+	return es.merge(javaScriptFromCoffeeScript, javaScript)
 	.pipe(concat('all.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('dist'));
