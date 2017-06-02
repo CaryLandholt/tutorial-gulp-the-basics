@@ -1,4 +1,6 @@
 # tutorial-gulp-the-basics
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/CaryLandholt/tutorial-gulp-the-basics.svg)](https://greenkeeper.io/)
 > Tutorial files for https://www.youtube.com/watch?v=dwSLFai8ovQ
 
 
